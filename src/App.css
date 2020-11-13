@@ -1,27 +1,63 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
   display: flex;
-  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+.app__left {
+  flex: 0.9;
+}
+
+body {
+  background-color: #f5f6fa;
+}
+.app__header {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  margin-bottom: 20px;
+  background-color: #f5f6fa;
+}
+
+select {
+  background-color: blueviolet;
   color: white;
+  text-align: right;
+  width: 100%;
+  min-height: 5px;
+  padding: 5px;
+  border: 1px solid;
+  border-radius: 20px;
+  border-color: #77bfbf rgba(36, 5, 146, 0.568) #77bfbf rgb(58, 19, 148);
+  font-weight: 600;
+  cursor: pointer;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.app__stats {
+  display: flex;
+  justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 990px) {
+  .app {
+    display: flex;
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media screen and (max-width: 480px) {
+  .app__header {
+    font-size: smaller;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    justify-items: center;
+    margin-bottom: 20px;
+    overflow: scroll;
   }
 }
