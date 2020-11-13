@@ -121,11 +121,15 @@ const App = () => {
           zoom={mapZoom}
         />
       </div>
-      <Card className="app__right">
+      <Card className="app__right">        
         <CardContent>
           <div className="app__information">
             <h3>Live Cases by Country</h3>
             <Table countries={tableData} />
+            </div>
+          </CardContent>         
+          <CardContent>  
+            <div  className="app__Worldwide">
             <h3>Worldwide new {casesType}</h3>
             <LineGraph casesType={casesType} />
           </div>

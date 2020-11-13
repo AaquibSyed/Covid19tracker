@@ -31,3 +31,10 @@
   font-size: 0.8rem !important;
   margin-top: 15px !important;
 }
+@media (max-width: 990px) {
+  .infoBox__cases {
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-left: -5px;
+  }
+}

@@ -84,7 +84,7 @@ function LineGraph({ casesType }) {
   }, [casesType]);
 
   return (
-    <div>
+    <div className='linegraph'>
       {data?.length > 0 && (
         <Line
           data={{
